@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "关于《动手学深度学习（第二版）》学习笔记系列的目录"
+title: "《动手学深度学习（第二版）》学习笔记系列"
 date: 2025-10-27
 tags: [AI, catalogue]
 toc: false
@@ -33,5 +33,9 @@ author: Pianfan
 - [10. 注意力机制](https://pianfan.github.io/d2l_attention-mechanisms/)
 
 - [11. 优化算法](https://pianfan.github.io/d2l_optimization/)
+
+- [12. 计算性能](https://pianfan.github.io/d2l_computational-performance/)
+
+- [13. 计算机视觉](https://pianfan.github.io/d2l_computer-vision/)
 
 后续章节持续更新中……
