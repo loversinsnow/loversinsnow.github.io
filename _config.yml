@@ -5,11 +5,11 @@ avatar: https://pianfan.github.io/images/avatar.png
 favicon: https://pianfan.github.io/images/favicon.ico
 
 navigation:
-  - name: 首页
+  - name: home
     url: /
-  - name: 关于
+  - name: about
     url: /about
-  - name: 分类
+  - name: tags
     url: /tags
 
 paginate: 8
