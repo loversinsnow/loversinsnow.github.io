@@ -4,14 +4,8 @@ title: About
 permalink: /about/
 ---
 
-## 关于我
+## About me 
 
-你好，我是翩帆，目前是一名计算机专业的在校生。
+Hi. I'm Zhaoyang Cheng, a second-year undergraduate student at Institute for Interdisciplinary Information Sciences at Tsinghua University. I majored in computer science and artificial intelligence, and I'm interested on robot learning. If you're interested about my work or about me, feel free to drop an email.
 
-这是我基于 GitHub Pages 平台创建的个人博客，用于记录我的学习与心得，或者介绍我做过的项目。
 
-如果你对我的文章有任何疑问，或者发现文章中存在错误，可以通过邮件与我联系。
-
-## 版权声明
-
-本博客文章都是我的原创文章，版权归我所有，转载请与我联系获得授权许可。
