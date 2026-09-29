@@ -1,8 +1,8 @@
-name: "Home Page for Cheng Zhaoyang"
-description: "This is the homepage for Cheng Zhaoyang. I'm now a second-year undergraduate student at IIIS at Tsinghua University."
+name: "Zhaoyang Cheng | Tsinghua University"
+description: "Zhaoyang Cheng is a third-year undergraduate in the Yao Class at IIIS, Tsinghua University, studying Computer Science and Artificial Intelligence with an interest in robot learning."
 
 avatar: https://loversinsnow.github.io/images/myself.png
-favicon: https://pianfan.github.io/images/favicon.ico
+favicon: /images/favicon.svg
 
 navigation:
   - name: home
@@ -12,7 +12,6 @@ navigation:
   - name: tags
     url: /tags
 
-paginate: 8
 
 excerpt_separator: <!-- more -->
 
@@ -25,7 +24,7 @@ footer-links:
   twitter: 
   youtube:
 
-footer-text: Copyright (c) 2024-2025 Pianfan
+footer-text: Zhaoyang Cheng
 
 url: https://loversinsnow.github.io
 
@@ -60,7 +59,6 @@ sass:
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:

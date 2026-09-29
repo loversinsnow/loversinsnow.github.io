@@ -1,89 +1,46 @@
 ---
 layout: default
+title: Zhaoyang Cheng
+home: true
 ---
-<div class="search-container">
-  <input type="text" id="search-input" placeholder="search posts..." style="width: 90%;
-    height: 35px;
-    background-color: rgba(227,231,236,.2);
-    line-height: 35px;
-    margin-top: 20px;
-    padding:10px 16px;
-    border: 1px solid #c0c0c0;
-    font-size: 16px;
-    border-radius: 17px;
-    outline: none;
-    box-sizing: border-box;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);">
-  <ul id="results-container"></ul>
-</div>
 
-<!--script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script-->
-<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+<section class="profile" aria-labelledby="profile-name">
+  <div class="profile-copy">
+    <h1 id="profile-name">Zhaoyang Cheng</h1>
+    <p>
+      I am a third-year undergraduate student in the
+      <a href="https://iiis.tsinghua.edu.cn/en/">Institute for Interdisciplinary Information Sciences (IIIS)</a>
+      at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>,
+      where I study Computer Science and Artificial Intelligence in the <strong>Yao Class</strong>.
+    </p>
+    <p>My research interest is <strong>robot learning</strong>.</p>
+    <p>Feel free to reach out if you would like to chat about research or connect!</p>
+    <nav class="contact-links" aria-label="Contact links">
+      <a href="mailto:{{ site.footer-links.email }}">Email</a>
+      <span aria-hidden="true">/</span>
+      <a href="https://github.com/{{ site.footer-links.github }}">GitHub</a>
+    </nav>
+  </div>
+  <a class="profile-photo-link" href="{{ '/images/myself.png' | relative_url }}" aria-label="View full portrait of Zhaoyang Cheng">
+    <img class="profile-photo" src="{{ '/images/myself.png' | relative_url }}"
+      alt="Zhaoyang Cheng standing by a riverside at night" width="538" height="802" fetchpriority="high">
+  </a>
+</section>
 
-<script>
-	window.simpleJekyllSearch = new SimpleJekyllSearch({
-	searchInput: document.getElementById('search-input'),
-	resultsContainer: document.getElementById('results-container'),
-	json: '{{ site.baseurl }}/search.json',
-	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-	noResultsText: 'No results found',
-	limit: 10,
-	fuzzy: false,
-	exclude: ['Welcome']
-  })
-</script>
- 
-{% if site.posts.size == 0 %}
-  <h2>No post found</h2>
-{% endif %}
+<section class="home-section" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education</h2>
+  <div class="education-entry">
+    <div>
+      <h3><a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a></h3>
+      <p class="education-program">Undergraduate in Computer Science and Artificial Intelligence</p>
+      <p class="muted">Institute for Interdisciplinary Information Sciences · Yao Class</p>
+    </div>
+    <span class="education-status">Third-year undergraduate</span>
+  </div>
+</section>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  {% unless post.draft %}
-    <article class="post">
-      <h1>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
-
-      <div class="meta">
-        <span class="date">
-          {{ post.date | date: "%Y-%m-%d" }}
-        </span>
-
-        <ul class="tag">
-          {% for tag in post.tags %}
-          <li>
-            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-              {{ tag }}
-            </a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="entry">
-        {{ post.excerpt | truncate: 200 }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endunless %}
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <span class="prev">
-      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
-        ← 上一页
-      </a>
-    </span>
-  {% endif %}
-  {% if paginator.next_page %}
-    <span class="next">
-      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
-        下一页 →
-      </a>
-    </span>
-  {% endif %}
-</div>
+<section class="home-section" aria-labelledby="contact-heading">
+  <h2 id="contact-heading">Contact</h2>
+  <p>The best way to reach me is by email.</p>
+  <a class="email-link" href="mailto:{{ site.footer-links.email }}">{{ site.footer-links.email }}</a>
+</section>
